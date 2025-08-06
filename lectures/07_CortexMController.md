@@ -164,7 +164,8 @@ Die MPU arbeitet, indem sie den gesamten adressierbaren Speicher in diskrete **R
 Jede MPU-Region wird durch folgende Parameter definiert:
 
 - **Basisadresse:** Die Startadresse der Region im Speicher.
-- **Größe:** Die Größe der Region. Diese muss immer eine Zweierpotenz sein (z.B. 32 Bytes, 64 Bytes, ..., 4GB) und darf die Adressbreite des Systems nicht überschreiten.- - **Zugriffsberechtigungen (Access Permissions - AP):** Legen fest, wer (privilegiert oder unprivilegiert) auf die Region zugreifen darf und wie (lesen, schreiben, ausführen).
+- **Größe:** Die Größe der Region. Diese muss immer eine Zweierpotenz sein (z.B. 32 Bytes, 64 Bytes, ..., 4GB) und darf die Adressbreite des Systems nicht überschreiten.
+- **Zugriffsberechtigungen (Access Permissions - AP):** Legen fest, wer (privilegiert oder unprivilegiert) auf die Region zugreifen darf und wie (lesen, schreiben, ausführen).
 - **Speicherattribute (Memory Attributes - TEX, S, C, B):** Steuern, wie der Speicher von Caches und Puffern behandelt werden soll (z.B. Cacheable, Non-Cacheable, Write-Through, Write-Back, Shareable). Dies ist entscheidend für die Performance und Datenkonsistenz.
 - **Execute Never (XN):** Ein Bit, das die Ausführung von Code aus dieser Region verbietet. Sehr wichtig für Datensegmente, um Code-Injektionen zu verhindern.
 
